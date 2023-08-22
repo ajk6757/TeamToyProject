@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인하기 - Spotify</title>
+    <link rel="icon" href="https://www.scdn.co/i/_global/favicon.png" />
+    <link rel="stylesheet" href="css/style_login.css" />
+    <style>
+      body {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      div {
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div id="login_container">
+        <div id="header">
+          <div id="logo_container">
+            <img
+              src="img/Spotify_Logo_RGB_Black.png"
+              onclick="location.href='Main1.html'"
+            />
+          </div>
+        </div>
+        <div id="login_banner">
+          <div id="banner_container">
+            <div class="banner_social">
+              <p>계속하려면 Spotify에 로그인하세요.</p>
+              <div id="facebook_button">
+                <img src="resources/FaceBook_logo__.png" id="facebook_logo" />
+                <span>Facebook으로 계속하기</span>
+              </div>
+              <div id="apple_button">
+                <img src="resources/apple_logo.svg" id="apple_logo" />
+                <span id="apple_af">Apple로 계속하기</span
+                >
+              </div>
+              <div id="google_button">
+                <img
+                  src="resources/Google__G__Logo.svg.png"
+                  id="google_logo"
+                /><span>GOOGLE로 계속하기</span>
+              </div>
+              <div class="seperator1">
+                <div id="seperator1_1"><hr /></div>
+                <div id="or">또는</div>
+                <div id="seperator1_2"><hr /></div>
+              </div>
+            </div>
+            <div class="login1">
+              <div id="login1_email">이메일 주소 또는 사용자 이름</div>
+              <div>
+                <input
+                  type="text"
+                  id="userEmail"
+                  placeholder="이메일 주소 또는 사용자 이름"
+                />
+              </div>
+              <br />
+              <div id="login1_pwd">비밀번호</div>
+              <div>
+                <input type="password" id="userPwd" placeholder="비밀번호" />
+              </div>
+              <div id="find_pwd">
+                <a href="">비밀번호를 잊었나요?</a>
+              </div>
+              <div id="login1_check">
+                <div id="login_checkbox">
+                  <input
+                    type="checkbox"
+                    name="remember"
+                    value="personal_id_pwd"
+                  />내 정보 기억하기
+                </div>
+                <div id="login_button">로그인하기</div>
+              </div>
+            </div>
+            <div class="new_account">
+              <div id="no_account_question">
+                <h3>계정이 없나요?</h3>
+              </div>
+              <div
+                id="new_account_button"
+                onclick="location.href='Spotify-register.html'"
+              >
+                SPOTIFY에 가입하기
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

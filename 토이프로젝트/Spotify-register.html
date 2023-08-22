@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가입하기 - Spotify</title>
+    <link rel="icon" href="https://www.scdn.co/i/_global/favicon.png" />
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 450px;
+            margin: 0 auto;
+        }
+        #or{
+            margin: 0px auto 1em;
+            position: relative;
+            text-align: center;
+            box-sizing: border-box;
+            color: rgb(204, 204, 204);
+        }
+        #or_hr_1{
+            box-sizing: border-box;
+            border-top: 1px solid rgb(204, 204, 204);
+            width: 30%;
+            position: relative;
+            top: 0.8em;
+            left: 55px;
+        }
+        #or_hr_2{
+            box-sizing: border-box;
+            border-top: 1px solid rgb(204, 204, 204);
+            width: 30%;
+            position: relative;
+            top: -10px;
+            left: 260px;
+        }
+        
+        /* H E A D E R */
+        .header{
+            text-align: center;
+            margin: 30px 0 30px 0;
+            font-weight: 900;
+            font-size: 19px;
+        }
+        #spotify_logo{
+            box-sizing: border-box;
+            width: 90px;
+        }
+
+        #facebook_logo{
+            box-sizing: border-box;
+            width: 30px;
+            transform: translate(-5px, 8px);
+        }
+
+        #facebook_btn{
+            border: 2px solid #405A93;
+            border-radius: 50px;
+            background-color: #405A93;
+            color: white;
+            font-size: 17px;
+            font-weight: 700;
+            text-align: center;
+            margin: 20px;
+            height: 50px;
+        }
+        
+        #facebook_btn:hover{
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+
+        #google_logo{
+            box-sizing: border-box;
+            width: 30px;
+            transform: translate(-5px, 8px);
+        }
+
+        #google_btn{
+            border: 2px solid black;
+            border-radius: 50px;
+            font-size: 17px;
+            font-weight: 700;
+            text-align: center;
+            margin: 20px;
+            height: 50px;
+        }
+
+        #google_btn:hover{
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+
+        /* F O R M */
+        .email_register h2{
+            position: relative;
+            text-align: center;
+            margin: 0px auto 1em;
+        }
+        .email_register p{
+            font-size: 13px;
+            margin-top: 5px;
+            margin-bottom: -0px;
+        }
+        #hidden_email{
+            box-sizing: border-box;
+            border: hidden;
+            display: flex;
+            position: absolute;
+            transform: translate(2%, -120%);
+            width: 433px;
+            height: 35px;
+            font-size: 17px;
+        }
+
+        #email_register_question{
+            box-sizing: border-box;
+            font-size: 14px;
+            font-weight: 900;
+            margin-top: 25px;
+            margin-bottom: -10px;
+        }
+        #email,#pwd{
+            border: 1px solid gray;
+            box-sizing: border-box;
+            width: 100%;
+            height: 50px;
+            border-radius: 5px;
+        }
+        /* Form - birthday */
+        .birthday{
+            width: 100%;
+            height: 100%;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            padding: 50;
+            display: flex;
+            justify-content: flex-start;
+        }
+        #year{
+            width: 40%;
+        }
+        #useryear{
+            margin-top: 5px;
+            box-sizing: border-box;
+            width: 85%;
+            height: 100%;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+        #month{
+            width: 60%;
+        }
+        #usermonth{
+            margin-top: 5px;
+            box-sizing: border-box;
+            width: 90%;
+            height: 100%;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+        #day{
+            width: 20%;
+        }
+        #userday{
+            margin-top: 5px;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+        /* Form - gender */
+        .radio{
+            box-sizing: border-box;
+            margin-top: 15px;
+            line-height: 30px;
+        }
+        .radio label{
+            box-sizing: border-box;
+            margin-left: 5px;
+            margin-right: 18px;
+        }
+        #optional_agreement_link{
+            color: rgb(29, 185, 84);
+            margin-top: 20px;
+            box-sizing: border-box;
+        }
+        #detail_known_information{
+            font-size: 11px;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        #register{
+            margin-top: 40px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        #register_btn{
+            box-sizing: border-box;
+            border: hidden;
+            padding: 20px 50px 20px 50px;
+            border-radius: 50px;
+            background-color: rgb(29, 185, 84);
+            color: black;
+            font-weight: 900;
+            font-size: 18px;
+        }
+        #register_btn:hover{
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+        #do_you_have_id{
+            box-sizing: border-box;
+            text-align: center;
+            margin-top: 20px;
+        }
+        #login{
+            color: rgb(29, 185, 84);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div><a href="Main1.html"><img src="resources/spotify_logo.png" id="spotify_logo"></a></div>
+        <div><h2>무료로 가입하고 들어보세요.</h2></div>
+    </div>
+    <div id="facebook_btn">
+        <img src="resources/FaceBook_logo__.png" id="facebook_logo"> <span>Facebook으로 가입하기</span>
+    </div>
+    <div id="google_btn">
+        <img src="resources/Google__G__Logo.svg.png" id="google_logo"><span>Google로 가입하기</span>
+    </div>
+    <div id="or">
+        <div id="or_hr_1"></div>또는<div id="or_hr_2"></div>
+    </div>
+
+    <form class="email_register">
+        <div id="register_content">
+            <h2>이메일 주소로 가입하기</h2>
+            <div id="email_register_question">
+                이메일이 어떻게 되시나요?
+            </div><br>
+            <div id="email" name="userEmail"></div>
+            <input type="email" id="hidden_email" placeholder="이메일을 입력하세요." required>
+            <div id="email_register_question">
+                이메일을 확인하세요.
+            </div><br>
+            <input type="email" id="email" name="userEmail" placeholder="  이메일을 다시 입력하세요." required>
+            <div id="email_register_question">
+                비밀번호를 만드세요.
+            </div><br>
+            <input type="password" id="pwd" name="userPwD" placeholder="  비밀번호를 만드세요." required>
+            <br>
+            <div id="email_register_question">
+                어떤 사용자 이름을 사용하시겠어요?
+            </div><br>
+            <input type="password" id="pwd" name="userPwD" placeholder="  프로필 이름을 입력하세요." required>
+            <p>프로필에 표시되는 이름입니다.</p>
+            <br>
+            <div id="email_register_question">
+                생년월일이 어떻게 되시나요?
+            </div>
+            <div class="birthday">
+                <div id="year">
+                    연도<br>
+                    <input type="text" id="useryear" placeholder="  YYYY">
+                </div>
+                <div id="month">
+                    월<br>
+                    <select id="usermonth"">
+                        <option selected>월</option>
+                        <option value="Jan">1월</option>
+                        <option value="Feb">2월</option>
+                        <option value="Mar">3월</option>
+                        <option value="Apr">4월</option>
+                        <option value="May">5월</option>
+                        <option value="Jun">6월</option>
+                        <option value="Jul">7월</option>
+                        <option value="Aug">8월</option>
+                        <option value="Sep">9월</option>
+                        <option value="Oct">10월</option>
+                        <option value="Nov">11월</option>
+                        <option value="Dec">12월</option>
+                    </select>
+                </div>
+                <div id="day">
+                    일<br>
+                    <input type="text" id="userday" placeholder="  DD">
+                </div>
+            </div>
+            <br>
+            <div id="email_register_question">
+                성별이 무엇인가요?
+            </div>
+            <div class="radio">
+                <input type="radio" id="radioM" name="gender" value="M">
+                <label for="radioM">남성</label>
+                <input type="radio" id="radioF" name="gender" value="M">
+                <label for="radioF">여성</label>
+                <input type="radio" id="radioN" name="gender" value="M">
+                <label for="radioN">논바이너리</label>
+                <input type="radio" id="radioE" name="gender" value="M">
+                <label for="radioE">기타</label><br>
+                <input type="radio" id="radioA" name="gender" value="M">
+                <label for="radioA">답변 거부</label>
+            </div>
+            <br><br>
+            <input type="checkbox" name="optional_agreement" id="optional_agreement" value="optional_agreement">
+            <label for="optional_agreement">Spotify 마케팅 메세지 수신 동의(선택 사항)</label>
+            <br><br>
+            <input type="checkbox" name="optional_agreement_link" id="optional_agreement_link" value="optional_agreement_link">
+            <label for="optional_agreement_link">
+                <a href="" id="optional_agreement_link">써드 파티 데이터 제공(선택 사항)</a>
+            </label>
+            <br><br>
+            <input type="checkbox" name="optional_agreement_link" id="optional_agreement_link" value="optional_agreement_link">
+            <label for="optional_agreement_link">
+                <a href="" id="optional_agreement_link">필수 개인 정보 수집 및 이용</a>
+            </label>
+            <br><br>
+            <input type="checkbox" name="optional_agreement_link" id="optional_agreement_link" value="optional_agreement_link">
+            <label for="optional_agreement_link">
+                <a href="" id="optional_agreement_link">Spotify 사용 약관</a>
+            </label>
+            <br><br>
+            <p id="detail_known_information">
+                당사가 귀하에 대해 처리 할 데이터에 대한 자세한 정보는 당사
+                <a href="" id="optional_agreement_link">개인정보처리방침</a> 을<br>참조하십시오.
+            </p>
+        </div>
+    </form>
+    <div id="register">
+        <input type="button" id="register_btn" value="가입하기">
+    </div>
+    <div id="do_you_have_id">
+        계정이 있나요? 
+        <a href="Spotify_Login.html" id="login">로그인하세요</a>.
+    </div>
+        
+
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
